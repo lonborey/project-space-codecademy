@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{ 
+  min-height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  background: url('https://images.pexels.com/photos/956999/milky-way-starry-sky-night-sky-star-956999.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2') no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 100px;
+}
+
+.logo{
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.header .logo span{
+  color: white;
+  font-size: 1.8rem;
+}
+
+.navbar a{
+  position: relative;
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: 700;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+.navbar a::before{
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #fff;
+    transition: .3s;
+}
+
+.navbar a:hover::before{
+  width: 100%;
+}
+
+.main{
+  background: rgba(247, 251, 251, 0.2);
+  
+  padding: 10px 50px;
+  border-radius: 8px;
+  width: 50vw;
+}
+
+.main h1{
+  color: white;
+  font-weight: bold;
+  padding: 10px 0;
+}
+
+.main p{
+  color: #fff;
+  padding-bottom: 20px;
+}
+
+.main span{
+  color: lightblue;
+}
+
+#marked{
+  color: yellow;
+}
+
+.main-space{
+    display: flex;
+    margin: 50px 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.space-image img{
+    width: 50vw;
+    height: 60vh;
+}
+
+
+.footer{
+    display: flex;
+    background: rgba(247, 251, 251, 0.1);
+    height: 15rem;
+    padding: 2rem;
+    justify-content: space-between;
+}
+
+.footer-logo h3{
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: bold;
+    padding: 10px 0;
+}
+
+.footer-logo p{
+    color: white;
+    font-size: 0.8rem;
+}
+
+.footer .discover h3{
+    color: white;
+    font-size: 1.5rem;
+    position: relative;
+    cursor: pointer;
+}
+
+.footer .community h3{
+    color: white;
+    font-size: 1.5rem;
+    position: relative;
+    cursor: pointer;
+}
+
+.footer .about h3{
+    color: white;
+    font-size: 1.5rem;
+    position: relative;
+    cursor: pointer;
+}
+
+.footer .discover h3::before{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    content: '';
+    background-color: white;
+    transition: .3s;
+}
+
+.footer .community h3::before{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    content: '';
+    background-color: white;
+    transition: .3s;
+}
+
+.footer .about h3::before{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    content: '';
+    background-color: white;
+    transition: .3s;
+}
+
+.footer .discover h3:hover::before{
+    width: 100%;
+}
+
+.footer .community h3:hover::before{
+    width: 100%;
+}
+
+.footer .about h3:hover::before{
+    width: 100%;
+}
+
+.footer .discover, .community, .about, ul{
+    padding: 10px 0;
+}
+
+.footer .discover, .community, .about, ul li{
+    list-style: none;
+}
+
+.footer .discover, .community, .about, ul li a{
+    color: rgb(202, 202, 202);
+    text-decoration: none;
+}
+
+.footer .discover, .community, .about, ul li a:hover{
+    color: red;
+}
+
+.footer .social-icon{
+    display: flex;
+    color: white;
+    padding-top: 10px;
+    font-size: 1.4rem;
+}
+
+.footer .social-icon i{
+    padding: 0 8px;
+}
+
+.footer .social-icon i:hover{
+    color: skyblue;
+}
+
+.footer .copyright{
+    padding: 10px 0;
+}
+
+.footer .copyright p span{
+    font-weight: bold;
+    color:aquamarine;
+    padding: 0 5px
+}
